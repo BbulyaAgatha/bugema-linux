@@ -1,92 +1,126 @@
-# Bugema Linux Support
-
-## 1. Purpose
+Bugema Linux Support
 
 This document explains how users, students, contributors, researchers, and other members of the Bugema Linux community can obtain support.
 
-Bugema Linux is developed by the **Bugema Open Source Community (BOSC)** at **Bugema University, Uganda**.
+Bugema Linux is developed by the Bugema Open Source Community (BOSC) at Bugema University, Uganda.
 
-The project uses GitHub as the primary platform for technical collaboration, documentation, issue tracking, and project discussions.
+GitHub is the primary platform for technical collaboration, documentation, issue tracking, and project discussions.
 
----
+Quick Support Guide
+Type of request	Where to go
+Reproducible bug	GitHub Issues
+General question	GitHub Discussions
+Feature request	GitHub Issues
+Security vulnerability	Follow SECURITY.md
+Contribution question	GitHub Discussions
+Documentation problem	GitHub Issues
 
-## 2. Before Requesting Support
+Before opening a new request, search existing Issues and Discussions to avoid duplicates.
 
-Before asking for help, please check:
+Before Requesting Support
 
-1. The Bugema Linux README.
-2. The installation documentation.
-3. The user guide.
-4. The administration documentation.
-5. Existing GitHub Issues.
-6. Existing GitHub Discussions.
-7. Known issues for the relevant release.
+Please check the following first:
 
-The problem may already have been reported or documented.
+README.md
 
----
+Installation documentation
 
-## 3. Where to Ask for Help
+User guide
 
-Different types of questions should use different channels.
+Administration documentation
 
-### Technical Problems
+Existing GitHub Issues
 
-Use a GitHub Issue when you have identified a reproducible problem with Bugema Linux.
+Existing GitHub Discussions
 
-Examples:
+Known issues for your Bugema Linux release
 
-* Installation failure
-* Boot failure
-* Application failure
-* Networking problem
-* Package conflict
-* Desktop problem
-* Hardware compatibility issue
+Your problem may already be documented or reported.
 
-Provide enough technical information for someone else to reproduce the problem.
+Technical Problems
 
-### Questions and General Discussion
+Use a GitHub Issue when you have identified a reproducible technical problem with Bugema Linux.
+
+Examples include:
+
+Installation failures
+
+Boot failures
+
+Application failures
+
+Networking problems
+
+Package conflicts
+
+Desktop problems
+
+Hardware compatibility issues
+
+Provide enough technical information for another person to reproduce and investigate the problem.
+
+Questions and General Discussion
 
 Use GitHub Discussions for:
 
-* General questions
-* Project ideas
-* Design discussions
-* Community conversations
-* Getting started
-* Non-urgent technical questions
+General questions
 
-### Feature Requests
+Getting started
 
-Feature requests should be submitted through the appropriate GitHub issue mechanism.
+Project ideas
 
-Explain:
+Design discussions
 
-* What you want
-* Why it is useful
-* Who would benefit
-* Possible implementation approaches
+Community conversations
 
-### Security Problems
+Non-urgent technical questions
 
-Do not report potentially serious security vulnerabilities through a public issue.
+Questions should be specific and include relevant information about what you have already tried.
 
-Follow the process described in:
+Feature Requests
 
-`SECURITY.md`
+Feature requests should describe the underlying problem or need rather than only requesting a particular implementation.
 
----
+A useful feature request should explain:
 
-# 4. Reporting a Good Bug
+Problem:
+Proposed solution:
+Expected benefit:
+Potential users:
+Possible implementation:
+Testing requirements:
 
-A useful bug report should contain:
 
-### Environment
+The project team may modify, postpone, or decline a feature depending on technical requirements, resources, security considerations, and project priorities.
+
+Security Problems
+
+Do not report potentially serious security vulnerabilities through a public GitHub Issue or Discussion.
+
+Follow the private reporting procedure described in SECURITY.md.
+
+Do not publicly disclose:
+
+Exploit details
+
+Credentials
+
+Security-sensitive configuration
+
+Private keys
+
+Access tokens
+
+Other information that could put users or project infrastructure at risk
+
+Reporting a Good Bug
+
+A useful bug report should contain enough information for another contributor to understand and reproduce the problem.
+
+Environment
 
 Include information such as:
 
-```text
 Bugema Linux version:
 Computer/device:
 Processor:
@@ -95,23 +129,23 @@ Storage:
 Graphics:
 Virtual machine or physical machine:
 Virtualization platform:
-```
 
-### Problem
+Problem
 
 Clearly explain:
 
-* What happened?
-* What did you expect to happen?
-* What steps caused the problem?
+What happened?
 
-### Reproduction
+What did you expect to happen?
+
+What steps caused the problem?
+
+Reproduction
 
 Provide the smallest possible sequence of steps that reproduces the problem.
 
 Example:
 
-```text
 1. Boot Bugema Linux Alpha 0.1
 2. Open Network Settings
 3. Enable Wi-Fi
@@ -119,73 +153,67 @@ Example:
 5. Enter the password
 6. Click Connect
 7. Network fails to connect
-```
 
-### Evidence
+Evidence
 
 Where appropriate, include:
 
-* Error messages
-* Logs
-* Screenshots
-* Terminal output
-* Relevant configuration information
+Error messages
 
-Do not include passwords, tokens, private keys, or other sensitive information.
+Logs
 
----
+Screenshots
 
-# 5. Feature Requests
+Terminal output
 
-Feature requests should explain the problem rather than only requesting a particular implementation.
+Relevant configuration information
 
-A useful request includes:
+Remove passwords, tokens, private keys, and other sensitive information before posting logs or configuration files.
 
-```text
-Problem:
-Proposed solution:
-Expected benefit:
-Potential users:
-Possible implementation:
-Testing requirements:
-```
-
-The project team may modify, postpone, or reject a feature depending on technical requirements, resources, security, and project priorities.
-
----
-
-# 6. Installation Support
+Installation Support
 
 When requesting installation assistance, provide:
 
-* Bugema Linux version
-* Installation method
-* Computer model
-* CPU architecture
-* RAM
-* Storage configuration
-* BIOS/UEFI information where relevant
-* Installation media creation method
-* Error messages
-* Relevant screenshots or logs
+Bugema Linux version
 
-If installing in a virtual machine, include:
+Installation method
 
-* Virtualization platform
-* Virtual CPU allocation
-* RAM allocation
-* Disk size
-* Network configuration
+Computer model
 
----
+CPU architecture
 
-# 7. Hardware Compatibility
+RAM
 
-Hardware reports are particularly valuable during the development of Bugema Linux.
+Storage configuration
+
+BIOS/UEFI information where relevant
+
+Installation-media creation method
+
+Error messages
+
+Relevant screenshots or logs
+
+Virtual Machines
+
+If Bugema Linux is being installed in a virtual machine, also provide:
+
+Virtualization platform
+
+Virtual CPU allocation
+
+RAM allocation
+
+Disk size
+
+Network configuration
+
+Hardware Compatibility
+
+Hardware reports are particularly valuable during Bugema Linux development.
 
 When reporting hardware compatibility, provide:
 
-```text
 Manufacturer:
 Model:
 CPU:
@@ -195,152 +223,165 @@ Network adapter:
 Wi-Fi adapter:
 Storage:
 Other relevant hardware:
-```
 
-Also indicate whether each component:
 
-* Works
-* Partially works
-* Does not work
-* Has not been tested
+Indicate the status of each relevant component:
 
----
+Works
 
-# 8. Student Support
+Partially works
 
-Students participating in the Open Source Systems course are encouraged to use the project support mechanisms.
+Does not work
+
+Not tested
+
+Where possible, include relevant logs or hardware-detection output.
+
+Student Support
+
+Students participating in the Open Source Systems course are encouraged to use the project's support mechanisms.
 
 Students should first:
 
-1. Read the relevant documentation.
-2. Search existing Issues.
-3. Search Discussions.
-4. Discuss the problem with their team.
-5. Ask a focused technical question if the problem remains unresolved.
+Read the relevant documentation.
 
-Students should avoid posting assignment questions without demonstrating their own investigation.
+Search existing Issues.
 
-The project is intended to encourage problem solving and open-source collaboration rather than simply providing completed answers.
+Search Discussions.
 
----
+Discuss the problem with their team.
 
-# 9. Contributor Support
+Ask a focused technical question if the problem remains unresolved.
+
+Students should demonstrate their own investigation when requesting help with coursework.
+
+Bugema Linux support is intended to encourage problem solving and open-source collaboration rather than simply providing completed assignment answers.
+
+Contributor Support
 
 Contributors who are unsure how to begin should:
 
-1. Review `README.md`.
-2. Read `CONTRIBUTING.md`.
-3. Review available GitHub Issues.
-4. Look for issues labelled `good-first-issue`.
-5. Ask questions through an appropriate GitHub Discussion.
+Review README.md.
 
-New contributors are encouraged to start with documentation, testing, or clearly defined development tasks before attempting major architectural changes.
+Read CONTRIBUTING.md.
 
----
+Review available GitHub Issues.
 
-# 10. Emergency or Critical Problems
+Look for issues labelled good-first-issue.
+
+Ask questions through an appropriate GitHub Discussion.
+
+New contributors are encouraged to begin with documentation, testing, bug fixes, or clearly defined development tasks before attempting major architectural changes.
+
+Emergency and Critical Problems
 
 If a problem could cause immediate and serious harm to users or project infrastructure, contact an authorized project maintainer through an appropriate private communication channel.
 
 Do not publish sensitive credentials, exploit details, or confidential institutional information in public discussions.
 
-Security vulnerabilities should follow `SECURITY.md`.
+Security vulnerabilities must follow the process described in SECURITY.md.
 
----
+What Not to Post
 
-# 11. What Not to Post
+Never publicly post:
 
-Never post the following publicly:
+Passwords
 
-* Passwords
-* API keys
-* Access tokens
-* Private SSH keys
-* Private certificates
-* Database credentials
-* Personal information
-* Confidential University information
-* Unpublished research data
-* Sensitive security information
+API keys
 
-If sensitive information has accidentally been posted, notify a maintainer immediately.
+Access tokens
 
----
+Private SSH keys
 
-# 12. Support Does Not Guarantee a Fix
+Private certificates
 
-Bugema Linux is an open-source project.
+Database credentials
 
-Submitting a support request does not guarantee that a problem will immediately be fixed.
+Personal information
+
+Confidential University information
+
+Unpublished research data
+
+Sensitive security information
+
+If sensitive information is accidentally posted, remove it if possible and notify a project maintainer immediately.
+
+Support Does Not Guarantee a Fix
+
+Bugema Linux is an open-source project. Submitting a support request does not guarantee that a problem will immediately be fixed.
 
 Issues may be:
 
-* Investigated
-* Reproduced
-* Prioritized
-* Assigned
-* Deferred
-* Closed as duplicates
-* Closed when unsupported
-* Addressed in a future release
+Investigated
+
+Reproduced
+
+Prioritized
+
+Assigned
+
+Deferred
+
+Closed as duplicates
+
+Closed when unsupported
+
+Addressed in a future release
 
 The project team will aim to communicate the status of significant issues clearly.
 
----
+Supported Releases
 
-# 13. Supported Releases
+As Bugema Linux matures, the project will define its supported release policy.
 
-As the project matures, Bugema Linux will define supported release versions.
+The support documentation should identify:
 
-Support documentation should identify:
+Current development release
 
-* Current development release
-* Current stable release
-* Previous supported release
-* End-of-support releases
+Current stable release
 
-The exact support policy will be established before production releases.
+Previous supported release
 
----
+End-of-support releases
 
-# 14. Documentation First
+The exact release-support policy will be established before production releases.
 
-Whenever a recurring support question is identified, the project team should consider adding the solution to the documentation.
+Documentation First
 
-This allows future users to solve similar problems without creating duplicate support requests.
+When a recurring support question is identified, the project team should consider adding the solution to the documentation.
+
+This helps future users solve similar problems without creating duplicate support requests.
 
 Useful documentation areas include:
 
-```text
 docs/
 ├── installation/
 ├── administration/
 ├── development/
 └── user-guide/
-```
 
----
 
-# 15. Community Support
+Contributors are encouraged to improve documentation whenever they discover unclear, incomplete, or outdated information.
+
+Community Support
 
 Bugema Linux is intended to develop a community of users, students, lecturers, researchers, developers, and open-source contributors.
 
-Community members are encouraged to help one another while maintaining the project's Code of Conduct.
+Community members are encouraged to help one another while following the project's Code of Conduct.
 
 Useful answers and troubleshooting solutions should be documented so that knowledge remains available to future contributors.
 
----
-
-# 16. Continuous Improvement
+Continuous Improvement
 
 The support process will evolve as Bugema Linux grows.
 
 Feedback about documentation, support procedures, and user experience is welcome through the project's GitHub collaboration channels.
 
----
+Suggestions that improve accessibility, clarity, documentation, or the support experience are encouraged.
 
-**Bugema Linux**
-**Bugema Open Source Community (BOSC)**
-**Bugema University, Uganda**
+Bugema Linux
+Bugema Open Source Community (BOSC)
+Bugema University, Uganda
 
-> **Learn. Build. Share. Innovate.**
+Learn. Build. Share. Innovate.
